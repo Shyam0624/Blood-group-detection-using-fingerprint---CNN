@@ -14,7 +14,6 @@ The primary objective of this project is to design and implement a system capabl
 
 
 ![image](https://github.com/user-attachments/assets/bb05516a-8f73-45af-a7d9-40e57bb3f802)
-                                                    System Architecture Model
 
 
 Dataset:
@@ -27,15 +26,12 @@ The dataset - “Finger Print Based Blood group dataset” by Raju Mavinmar from
 Metrics:
 
 ![image](https://github.com/user-attachments/assets/95c9f3c5-474e-4e14-8386-efcc3515b771)
-                                                    Sequential Model Accuracy
                                                     
 
 ![image](https://github.com/user-attachments/assets/031c5d7e-9336-4153-876c-2a4b6950ff95)
-                                                    Classification Report
                                                     
 
 ![image](https://github.com/user-attachments/assets/45ea069f-2e9b-4f0a-9c5e-3c4da8682bac)
-                                                    Confusion Matrix
 
 
 
