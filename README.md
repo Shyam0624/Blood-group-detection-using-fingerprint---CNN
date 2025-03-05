@@ -12,6 +12,7 @@ The primary objective of this project is to design and implement a system capabl
 
 
 
+
 ![image](https://github.com/user-attachments/assets/bb05516a-8f73-45af-a7d9-40e57bb3f802)
                                                     System Architecture Model
 
