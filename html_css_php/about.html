@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #efedf0, #2575fc);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        
+        .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: 60px; 
+    line-height: 60px; 
+}
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: 60px; 
+    line-height: 60px; 
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 20px; 
+}
+
+
+.nav-logo p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+
+.nav-menu ul {
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 20px;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.nav-menu ul li .link:hover {
+    color: #ffcc00; 
+}
+
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #ffcc00;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+        
+        .about-container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .about-container h2 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .about-container p {
+            color: #555;
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: normal;
+            transition: color 0.3s ease;
+        }
+
+        .about-container p:hover {
+            color: #0066cc;
+        }
+
+        .about-container a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 20px;
+            border: 2px solid #0066cc;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .about-container a:hover {
+            background-color: #0066cc;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            font-size: 14px;
+        }
+
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>BLOODGROUP DETECTOR</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="finger_print_upload.php" class="link">Home</a></li>
+                <li><a href="#" class="link active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p>The Bloodgroup Detector is a cutting-edge tool that allows users to detect their blood group
+            using fingerprint technology. Our mission is to simplify and modernize the process of blood group
+            detection by utilizing the latest advancements in image processing and artificial intelligence.</p>
+        <p>
+            This system is designed to be user-friendly, accurate, and efficient. Whether you are at home
+            or on the go, our platform can provide you with fast results without the need for traditional
+            blood testing methods. With a simple scan of your fingerprint, you can easily determine your
+            blood group within minutes.
+        </p>
+        <p>For more information, feel free to <a href="contact.html">Contact Us</a>.</p>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Blood Group Detection. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
